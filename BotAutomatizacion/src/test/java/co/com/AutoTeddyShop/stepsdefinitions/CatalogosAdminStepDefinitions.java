@@ -22,7 +22,7 @@ public class CatalogosAdminStepDefinitions {
 
     @Cuando("^el usuario registra un nuevo Catalogo con los siguientes datos:$")
     public void elUsuarioRegistraUnNuevoCatalogoConLosSiguientesDatos(List<DatosCatalogos> datosCatalogos) {
-        theActorInTheSpotlight().attemptsTo(NavegacionCatalogosAdmin.aute(datosCatalogos));
+        theActorInTheSpotlight().attemptsTo(NavegacionCatalogosAdmin.conLosDatos(datosCatalogos));
     }
 
     @Entonces("^se debe verificar que el Catalogo se haya creado correctamente$")

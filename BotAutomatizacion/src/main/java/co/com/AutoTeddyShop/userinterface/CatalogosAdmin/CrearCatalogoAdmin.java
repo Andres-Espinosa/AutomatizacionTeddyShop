@@ -13,4 +13,11 @@ public class CrearCatalogoAdmin {
     public static Target BTN_CREARCATALOGO = Target.the("Crear").located(By.xpath("/html/body/div[1]/div/div/div/div/div[2]/form/div[5]/button[1]"));
     public static Target BTN_CONFIRMACIONCREAR = Target.the("Confirmar creacion").located(By.xpath("/html/body/div[3]/div/div[6]/button[3]"));
     public static Target MENSAJE_CREACION = Target.the("Creado correctamente").located(By.xpath("//*[@id=\"swal2-html-container\"]"));
+
+    public static Target TABLA_CATALOGO = Target.the("Boton Crear Categorias").located(net.serenitybdd.core.annotations.findby.By.xpath("//*[@id=\"root\"]/div/div/div/div/div[3]/div[1]"));
+    public static Target FILAS_TABLA_CATALOGO= Target.the("Boton filas Categorias").located(net.serenitybdd.core.annotations.findby.By.xpath("//div[contains(@class, 'MuiTableContainer-root')]//tbody/tr"));
+
+    public static Target BOTON_SIGUIENTE_CATALOGO = Target.the("Boton Crear Categorias").located(net.serenitybdd.core.annotations.findby.By.xpath("//*[@id=\"root\"]/div/div/div/div/div[3]/div[2]/div/div[3]/button[2]"));
+
+
 }

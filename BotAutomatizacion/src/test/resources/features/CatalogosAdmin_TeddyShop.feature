@@ -17,6 +17,8 @@ Característica: Visualización de la pagina de Catalogos con el rol de administ
   Escenario: Verificar la visualización exitosa en la pagina de Catalogos con el rol de administrador de TeddyShop
     Dado que el usuario se encuentra en la pagina de Catalogos con el rol de administrador de TeddyShop
     Cuando el usuario registra un nuevo Catalogo con los siguientes datos:
-      | nombreCatalogo         | descripcionCatalogo                     |
-      | Automatizacion prueba5 | Descripcion de prueba de automatizacion |
+      | nombreCatalogo | descripcionCatalogo                     |
+      | Automatiza5    | Descripcion de prueba de automatizacion |
     Entonces se debe verificar que el Catalogo se haya creado correctamente
+      | nombreCatalogo | compañia                                |
+      | Automatiza5    | Descripcion de prueba de automatizacion |

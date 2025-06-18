@@ -16,5 +16,11 @@ public enum SessionVariables {
     FechaFinalHistorial,
 
     NombreCategoria,
-    DescripcionCategoria
+    DescripcionCategoria,
+
+
+    NombreCatalogoC,
+
+    NombreCompañia
+
 }
