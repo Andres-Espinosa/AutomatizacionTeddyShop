@@ -1,6 +1,6 @@
 package co.com.AutoTeddyShop.models.Utilidades;
 
-public class ValidacionesCatalogos {
+public class ValidacionesCatalogos{
 
     public static boolean nombreCatalogoEsIgual(String nombreEsperado, String nombreActual) {
         if (nombreEsperado == null || nombreActual == null) {
@@ -11,12 +11,12 @@ public class ValidacionesCatalogos {
         return nombreEsperado.trim().equalsIgnoreCase(nombreActual.trim());
     }
 
-    public static boolean compañiacatalogoEsIgual(String compañiaEsperada, String compañiaActual) {
-        if (compañiaEsperada == null ||     compañiaActual == null) {
+    public static boolean descripcionCatalogoEsIgual(String descripcionEsperada, String descripcionActual) {
+        if (descripcionEsperada == null || descripcionActual == null) {
             return false;
         }
 
         // Comparación ignorando mayúsculas/minúsculas y espacios extras
-        return compañiaEsperada.trim().equalsIgnoreCase(compañiaActual.trim());
+        return descripcionEsperada.trim().equalsIgnoreCase(descripcionActual.trim());
     }
 }

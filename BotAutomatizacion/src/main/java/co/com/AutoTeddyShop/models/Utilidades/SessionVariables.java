@@ -21,6 +21,5 @@ public enum SessionVariables {
 
     NombreCatalogoC,
 
-    NombreCompañia
-
+    DescripcionCatalogo
 }

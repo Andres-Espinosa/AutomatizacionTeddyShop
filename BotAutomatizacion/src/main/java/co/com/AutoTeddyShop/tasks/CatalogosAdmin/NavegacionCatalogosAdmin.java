@@ -49,6 +49,6 @@ public class NavegacionCatalogosAdmin implements Task {
         );
 
         theActorInTheSpotlight().remember(SessionVariables.NombreCatalogoC.toString(), nombreCatalogoConAleatorio);
-        theActorInTheSpotlight().remember(SessionVariables.NombreCompañia.toString(), datos.getCompañia());
+        theActorInTheSpotlight().remember(SessionVariables.DescripcionCatalogo.toString(), datos.getDescripcionCatalogo());
     }
 }

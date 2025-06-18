@@ -26,7 +26,7 @@ public class ValidacionCatalogosAdmin implements Question<Boolean> {
         public Boolean answeredBy(Actor actor) {
 
             String nombreEsperado = actor.recall(SessionVariables.NombreCatalogoC.toString());
-            String compañiaEsperada = actor.recall(SessionVariables.NombreCompañia.toString());
+            String descripcionEsperada = actor.recall(SessionVariables.DescripcionCatalogo.toString());
 
             actor.attemptsTo(WaitUntil.the(TABLA_CATALOGO, isVisible()).forNoMoreThan(10).seconds());
             actor.attemptsTo(NavegarHastaUltimaPaginaCatalogo.delListadoCatalogos());
@@ -39,13 +39,13 @@ public class ValidacionCatalogosAdmin implements Question<Boolean> {
             WebElementFacade ultimaFila = filas.get(filas.size() - 1);
 
             String nombreActual = ultimaFila.findElement(By.xpath("./td[1]")).getText();
-            String compañiaActual = ultimaFila.findElement(By.xpath("./td[2]")).getText();
+            String descripcionActual = ultimaFila.findElement(By.xpath("./td[2]")).getText();
 
             boolean nombreValido = nombreEsperado.equals(nombreActual);
-            boolean compañiaValida = compañiaEsperada.equals(compañiaActual);
+            boolean compañiaValida = descripcionEsperada.equals( descripcionActual);
 
             System.out.println("Comparación nombre: esperado=" + nombreEsperado + ", actual=" + nombreActual + " => " + nombreValido);
-            System.out.println("Comparación compañia: esperado=" + compañiaEsperada + ", actual=" + compañiaActual + " => " + compañiaValida);
+            System.out.println("Comparación compañia: esperado=" + descripcionEsperada + ", actual=" + descripcionActual + " => " + compañiaValida);
 
             return nombreValido && compañiaValida;
         }

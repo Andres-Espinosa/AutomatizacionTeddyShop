@@ -20,5 +20,3 @@ Característica: Visualización de la pagina de Catalogos con el rol de administ
       | nombreCatalogo | descripcionCatalogo                     |
       | Automatiza5    | Descripcion de prueba de automatizacion |
     Entonces se debe verificar que el Catalogo se haya creado correctamente
-      | nombreCatalogo | compañia                                |
-      | Automatiza5    | Descripcion de prueba de automatizacion |

@@ -14,10 +14,14 @@ public class CrearCatalogoAdmin {
     public static Target BTN_CONFIRMACIONCREAR = Target.the("Confirmar creacion").located(By.xpath("/html/body/div[3]/div/div[6]/button[3]"));
     public static Target MENSAJE_CREACION = Target.the("Creado correctamente").located(By.xpath("//*[@id=\"swal2-html-container\"]"));
 
-    public static Target TABLA_CATALOGO = Target.the("Boton Crear Categorias").located(net.serenitybdd.core.annotations.findby.By.xpath("//*[@id=\"root\"]/div/div/div/div/div[3]/div[1]"));
-    public static Target FILAS_TABLA_CATALOGO= Target.the("Boton filas Categorias").located(net.serenitybdd.core.annotations.findby.By.xpath("//div[contains(@class, 'MuiTableContainer-root')]//tbody/tr"));
+    public static Target TABLA_CATALOGO = Target.the("Tabla de Catálogos")
+            .located(By.xpath("//h6[contains(.,'Lista de Catálogos')]/following-sibling::div[contains(@class,'MuiTableContainer-root')]"));
 
-    public static Target BOTON_SIGUIENTE_CATALOGO = Target.the("Boton Crear Categorias").located(net.serenitybdd.core.annotations.findby.By.xpath("//*[@id=\"root\"]/div/div/div/div/div[3]/div[2]/div/div[3]/button[2]"));
+    public static Target FILAS_TABLA_CATALOGO = Target.the("Filas de la tabla de catálogos")
+            .located(By.cssSelector("div.MuiTableContainer-root tbody tr"));
+
+    public static Target BOTON_SIGUIENTE_CATALOGO = Target.the("Botón Siguiente página")
+            .located(By.cssSelector("button[aria-label='Go to next page']"));
 
 
 }
